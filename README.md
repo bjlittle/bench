@@ -15,7 +15,7 @@ Benchmark:
 
 <p align="center">
   <img src="vdi.png" alt="vdi benchmarking" style="width:100%">
-  <h5 align="center">Figure 2: Software Rasterizer(‡) Planar and Spherical Projection Benchmarking</h5>
+  <h5 align="center">Figure 2: Software Rasterizer(‡) Planar and Spherical Projection Benchmarking (1MB Video Memory)</h5>
 </p>
 
 ----
@@ -29,5 +29,5 @@ Benchmark:
 
 <p align="center">
   <img src="vdi.gif" alt="vdi c192 mesh" style="width:100%">
-  <h5 align="center">Figure 4: Software Rasterizer(‡) C192 Cubed-Sphere Interactive Render</h5>
+  <h5 align="center">Figure 4: Software Rasterizer(‡) C192 Cubed-Sphere Interactive Render (1MB Video Memory)</h5>
 </p>
