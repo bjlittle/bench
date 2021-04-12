@@ -4,7 +4,7 @@
 
 Benchmark:
 * (†) - Mesa DRI Intel(R) HD Graphics 4000 (IVB GT2), 3.0 Mesa 20.0.8, 1536MB Video Memory
-* (‡) - SVGA3D, 3.3 (Compatibility Profile) Mesa 18.3.4, 1MB Video Memory
+* (‡) - SVGA3D, 3.3 (Compatibility Profile) Mesa 18.3.4, **1MB Video Memory** 🤔
 
 <p align="center">
   <img src="gpu.png" alt="gpu benchmarking" style="width:100%">
