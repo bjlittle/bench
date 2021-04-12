@@ -85,6 +85,7 @@ def vtk_render(mesh):
 
 def iris_setup(n):
     fname = f"/project/avd/ng-vat/data/poc-03/synthetic/bill/mesh_C{n}_synthetic_float.nc"
+    fname = f"/home/bill/Downloads/mesh_C{n}_synthetic_float.nc"
     with PARSE_UGRID_ON_LOAD.context():
         cube = iris.load_cube(fname)
         cube.data
@@ -93,15 +94,17 @@ def iris_setup(n):
 
 def iris_render(cube, projection=None):
     plotter = pv.Plotter(off_screen=True)
-    plot(cube, projection=projection, plotter=plotter, n_colors=15)
+    plot(cube, projection=projection, plotter=plotter, n_colors=15, pickable=False)
     c = int(math.sqrt(cube.shape[0] / 6))
     if projection:
-        fname = f"vdi_iris_output_C{c}_{projection}.png"
+        fname = f"gpu_iris_output_C{c}_{projection}.png"
     else:
-        fname = f"vdi_iris_output_C{c}.png"
+        fname = f"gpu_iris_output_C{c}.png"
     proj = f" ({projection})" if projection else ""
     plotter.add_title(f"C{c} Synthetic{proj}")
     plotter.show(screenshot=fname)
+    del cube
+    del plotter
 
 
 if __name__ == "__main__":
@@ -114,13 +117,13 @@ if __name__ == "__main__":
             lambda cube: iris_render(cube, projection="sinu"),
             lambda cube: iris_render(cube, projection="gins8")
         ],
-        n_range=[4, 12, 24, 48, 96, 192, 384, 768],
+        n_range=sorted([4, 12, 24, 48, 96, 192, 384, 768, 1048], reverse=True),
         labels=[
-            "Spherical (VDI)",
-            "Plate Carree (VDI)",
-            "Mollweider (VDI)",
-            "Sinusoidal (VDI)",
-            "Ginsburg VIII (VDI)"
+            "Spherical (GPU)",
+            "Plate Carree (GPU)",
+            "Mollweider (GPU)",
+            "Sinusoidal (GPU)",
+            "Ginsburg VIII (GPU)"
         ],
         xlabel="Cubed-Sphere Panel Size / C(N)",
         equality_check=None,

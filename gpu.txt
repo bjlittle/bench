@@ -1,0 +1,29 @@
+name of display: :0
+display: :0  screen: 0
+direct rendering: Yes
+Extended renderer info (GLX_MESA_query_renderer):
+    Vendor: Intel Open Source Technology Center (0x8086)
+    Device: Mesa DRI Intel(R) HD Graphics 4000 (IVB GT2) (0x166)
+    Version: 20.0.8
+    Accelerated: yes
+    Video memory: 1536MB
+    Unified memory: yes
+    Preferred profile: core (0x1)
+    Max core profile version: 4.2
+    Max compat profile version: 3.0
+    Max GLES1 profile version: 1.1
+    Max GLES[23] profile version: 3.0
+OpenGL vendor string: Intel Open Source Technology Center
+OpenGL renderer string: Mesa DRI Intel(R) HD Graphics 4000 (IVB GT2)
+OpenGL core profile version string: 4.2 (Core Profile) Mesa 20.0.8
+OpenGL core profile shading language version string: 4.20
+OpenGL core profile context flags: (none)
+OpenGL core profile profile mask: core profile
+
+OpenGL version string: 3.0 Mesa 20.0.8
+OpenGL shading language version string: 1.30
+OpenGL context flags: (none)
+
+OpenGL ES profile version string: OpenGL ES 3.0 Mesa 20.0.8
+OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.00
+
