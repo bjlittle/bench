@@ -8,7 +8,7 @@ Benchmark:
 
 <p align="center">
   <img src="gpu.png" alt="gpu benchmarking" style="width:100%">
-  <h5 align="center">Figure 1: GPU(†) Planar and Spherical Projection Benchmarking</h5>
+  <h5 align="center">Figure 1: GPU(†) Planar and Spherical Projection Benchmarking (1536MB Video Memory)</h5>
 </p>
 
 ----
@@ -22,7 +22,7 @@ Benchmark:
 
 <p align="center">
   <img src="gpu.gif" alt="gpu c768 mesh" style="width:100%">
-  <h5 align="center">Figure 3: GPU(†) C768 Cubed-Sphere Interactive Render</h5>
+  <h5 align="center">Figure 3: GPU(†) C768 Cubed-Sphere Interactive Render (1536MB Video Memory)</h5>
 </p>
 
 ----
