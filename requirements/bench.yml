@@ -1,0 +1,23 @@
+name: bench-dev
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python
+
+# core dependencies
+  - cmocean
+  - colorcet
+  - colorama
+  - matplotlib
+  - pip
+  - pip:
+    - perfplot
+  - pyvista
+  - pyvistaqt
+
+# optional dependencies
+  - black
+  - flake8
+  - pre-commit
